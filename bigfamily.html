@@ -81,7 +81,85 @@
         }
 
         .nav {
-            grid-area: nav;
+            position: absolute;
+            top: 184px;
+            left: 78px;
+            width: calc(1440px - 155px);
+            height: 409px;
+            display: grid;
+            grid-column: 1fr 336px 336px;
+            grid-row: 1fr 204px 204px;
+        }
+
+        .page1 {
+            /* Почему-то при использовании изображения family.svg страница не может его прогрузить. Решил не тратить время и использовать family.png */
+            background-image: url(/BF/img/family.png);
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+        }
+
+        .page2 {
+            position: relative;
+            background: #085CE8;
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .page2_txt {
+            position: absolute;
+            top: 20px;
+            left: 49px;
+            width: 232px;
+            height: 90px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 38.02px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page2_icon {
+            position: absolute;
+            top: 115px;
+            left: 128px;
+        }
+
+        .page3 {
+            position: relative;
+            background: #08B4E8;
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+
+        .page3_txt{
+            position: absolute;
+            top: 26px;
+            left: 22px;
+            width: 280px;
+            height: 109px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 38.02px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page3_icon {
+            position: absolute;
+            top: 114px;
+            left: 129px;
+        }
+
+        .page4 {
+            background: #0483FF;
+            grid-column: 4 / 5;
+            grid-row: 1 / 2;
+        }
+
+        .page5 {
+            background: #08C6FF;
+            grid-column: 4 / 5;
+            grid-row: 2 / 3;
         }
 
         .main {
@@ -118,8 +196,14 @@
         </div>
         <div class="nav">
             <div class="page1"></div>
-            <div class="page2"></div>
-            <div class="page3"></div>
+            <div class="page2">
+                <p class="page2_txt">Parental Support</p>
+                <img src="/BF/img/family-in-home-01.svg" alt="Иконка" class="page2_icon">
+            </div>
+            <div class="page3">
+                <p class="page3_txt">Family Preservation</p>
+                <img src="/BF/img/family-in-homek-01.svg" alt="Громкоговоритель" class="page3_icon">
+            </div>
             <div class="page4"></div>
             <div class="page5"></div>
         </div>
