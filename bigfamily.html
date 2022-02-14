@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <title>BigFamily</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            margin: auto;
+            position: relative;
+            width: 1440px;
+            height: 3907px;
+            border: 1px solid #000;
+            display: grid;
+            font-family: 'Barlow', sans-serif;
+            font-style: normal;
+        }
+
+
+
+        .menu {
+            position: absolute;
+            top: 48px;
+            left: 78px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 44px;
+            left: 170px;
+        }
+
+        input.text {
+            position: absolute;
+            top: 54px;
+            left: 385px;
+            width: 308px;
+            height: 49px;
+            border: 1px solid rgba(184, 184, 184, 1);
+            border-radius: 5px;
+            background: rgba(228, 227, 227, 1);
+            font-weight: 300;
+            font-size: 21px;
+            padding-left: 19px;
+
+        }
+
+        .search_icon {
+            position: absolute;
+            top: 66px;
+            left: 648px;
+        }
+
+        .social {
+            position: absolute;
+            top: 57px;
+            left: 720px;
+        }
+
+        .description {
+            position: absolute;
+            top: 45px;
+            left: 936px;
+            font-weight: 300;
+            font-size: 33px;
+            line-height: 39.6px;
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .slider {
+            grid-area: slider;
+        }
+
+        .contacts {
+            grid-area: contacts;
+        }
+
+        .locations {
+            grid-area: locations;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="header">
+            <img src="/BF/img/menu.svg" alt="menu_icon" class="menu">
+            <img src="/BF/img/logo.svg" alt="logo" class="logo">
+            <input type="text" class="text" placeholder="Search BigFamily Center">
+            <img src="/BF/img/search.svg" alt="search" class="search_icon">
+            <img src="/BF/img/social.svg" alt="social" class="social">
+            <p class="description">Improve your family life,<br> knowledge & understanding!</p>
+        </div>
+        <div class="nav">
+            <div class="page1"></div>
+            <div class="page2"></div>
+            <div class="page3"></div>
+            <div class="page4"></div>
+            <div class="page5"></div>
+        </div>
+        <div class="main">
+            <div class="article"></div>
+            <div class="art_menu"></div>
+        </div>
+        <div class="slider">
+            <div class="history1"></div>
+            <div class="history2"></div>
+            <div class="history3"></div>
+        </div>
+        <div class="contacts">
+            <div class="type1"></div>
+            <div class="type2"></div>
+            <div class="type3"></div>
+            <div class="type4"></div>
+        </div>
+        <div class="locations">
+            <div class="ari"></div>
+            <div class="flo"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
 </body>
+
 </html>
