@@ -131,7 +131,7 @@
             grid-row: 2 / 3;
         }
 
-        .page3_txt{
+        .page3_txt {
             position: absolute;
             top: 26px;
             left: 22px;
@@ -151,19 +151,61 @@
         }
 
         .page4 {
+            position: relative;
             background: #0483FF;
             grid-column: 4 / 5;
             grid-row: 1 / 2;
         }
 
+        .page4_txt {
+            position: absolute;
+            top: 20px;
+            left: 31px;
+            width: 280px;
+            height: 90px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 38.02px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page4_icon {
+            position: absolute;
+            top: 115px;
+            left: 129px;
+        }
+
         .page5 {
+            position: relative;
             background: #08C6FF;
             grid-column: 4 / 5;
             grid-row: 2 / 3;
         }
 
+        .page5_txt {
+            position: absolute;
+            top: 22px;
+            left: 31px;
+            width: 280px;
+            height: 90px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 38.02px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .page5_icon {
+            position: absolute;
+            top: 114px;
+            left: 132px;
+        }
+
         .main {
-            grid-area: main;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 336px 336px;
         }
 
         .slider {
@@ -204,10 +246,19 @@
                 <p class="page3_txt">Family Preservation</p>
                 <img src="/BF/img/family-in-homek-01.svg" alt="Громкоговоритель" class="page3_icon">
             </div>
-            <div class="page4"></div>
-            <div class="page5"></div>
+            <div class="page4">
+                <p class="page4_txt">Communiti Initiatives</p>
+                <img src="/BF/img/handy-01.svg" alt="Рука" class="page4_icon">
+            </div>
+            <div class="page5">
+                <p class="page5_txt">More to <br>know</p>
+                <img src="/BF/img/arow-01.svg" alt="Стрелка" class="page5_icon">
+            </div>
         </div>
+        
         <div class="main">
+            <h1>We`ll surround your kids with love & care!
+</h1>
             <div class="article"></div>
             <div class="art_menu"></div>
         </div>
