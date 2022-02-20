@@ -29,8 +29,6 @@
             font-style: normal;
         }
 
-
-
         .menu {
             position: absolute;
             top: 48px;
@@ -55,7 +53,6 @@
             font-weight: 300;
             font-size: 21px;
             padding-left: 19px;
-
         }
 
         .search_icon {
@@ -202,10 +199,127 @@
             left: 132px;
         }
 
-        .main {
-            position: relative;
+
+        .h1 {
+            position: absolute;
+            width: 1099px;
+            height: 62;
+            top: 657px;
+            left: 176px;
+            font-weight: 400;
+            font-size: 48px;
+            text-align: center;
+            line-height: 57.6px;
+        }
+
+        hr {
+            position: absolute;
+            width: 294px;
+            height: 5px;
+            left: 575px;
+            top: 769px;
+            background: rgba(8, 92, 232, 0.85);
+        }
+
+        .articles {
+            position: absolute;
+            top: 833px;
+            width: 1440px;
+            box-sizing: border-box;
             display: grid;
             grid-template-columns: 1fr 336px 336px;
+            grid-template-rows: auto;
+            padding-left: 80px;
+        }
+
+        .as {
+            width: 319px;
+            height: 48px;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38px;
+            color: rgba(0, 0, 0, 1);
+            grid-column: 1 / 2;
+            grid-row: 1/2;
+
+        }
+
+        .as_txt {
+            width: 567px;
+            height: 450px;
+            padding-top: 20px;
+            padding-right: 23px;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 46.00px;
+            color: rgba(0, 0, 0, 1);
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .as_but {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            width: 282px;
+            height: 74px;
+            left: 80px;
+            top: 1326px;
+            background: #085CE8;
+            border-radius: 35px;
+            color: white;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        .ft {
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 38.4px;
+            grid-column: 2 / 4;
+            grid-row: 1/2;
+        }
+
+        .list {
+            list-style: none;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 65px;
+            color: rgba(0, 39, 97, 1);
+
+        }
+
+        .left {
+            padding-top: 20px;
+            width: 280px;
+            height: 362px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .right {
+            padding-top: 20px;
+            width: 280px;
+            height: 362px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .ft_but {
+            grid-column: 2/4;
+            grid-row: 3/4;
+            width: 282px;
+            height: 74px;
+            left: 80px;
+            top: 1326px;
+            background: #085CE8;
+            border-radius: 35px;
+            color: white;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 32px;
+            text-align: center;
         }
 
         .slider {
@@ -255,12 +369,34 @@
                 <img src="/BF/img/arow-01.svg" alt="Стрелка" class="page5_icon">
             </div>
         </div>
-        
-        <div class="main">
-            <h1>We`ll surround your kids with love & care!
-</h1>
-            <div class="article"></div>
-            <div class="art_menu"></div>
+        <div class="h1">We`ll surround your kids with love & care!
+        </div>
+        <hr>
+        <div class="articles">
+            <div class="as">About success</div>
+            <div class="as_txt">It's no stretch to say that a person has a serious advantage in life if he/she comes
+                from a loving, supportive home. Many people still succeed though they come from less-than-ideal family
+                situations, but having their basic needs met, knowing that their parents love them and learning life
+                lessons at home.</div>
+            <input type="button" class="as_but" value="Full topic">
+            <div class="ft">Featured topics</div>
+            <ul class="list left">
+                <li><a href="#1">Health & beauty</a></li>
+                <li><a href="#2">Teen center</a></li>
+                <li><a href="#3">Strong relationships</a></li>
+                <li><a href="#4">Tips & advice</a></li>
+                <li><a href="#5">Marriage center</a></li>
+                <li><a href="#6">Parenting</a></li>
+            </ul>
+            <ul class="list right">
+                <li><a href="#7">Family therapy</a></li>
+                <li><a href="#8">Healthy families</li>
+                <li><a href="#9">Healing from trauma</a></li>
+                <li><a href="#10">Succeed at school</a></li>
+                <li><a href="#11">Relationship advisor</a></li>
+                <li><a href="#12">Friendship</a></li>
+            </ul>
+            <input type="button" class="ft_but" value="See more topics">
         </div>
         <div class="slider">
             <div class="history1"></div>
