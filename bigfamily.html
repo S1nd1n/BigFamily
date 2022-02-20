@@ -411,10 +411,6 @@
             font-size: 24px;
         }
 
-        .contacts {
-            grid-area: contacts;
-        }
-
         .foto {
             grid-column: 1/2;
             grid-row: 1/2;
@@ -425,12 +421,143 @@
             grid-row: 2/3;
         }
 
+        .contacts {
+            position: absolute;
+            top: 2131px;
+            border: 1px solid #000;
+            height: 799px;
+            width: 1440px;
+        }
+
+        .he2 {
+            position: absolute;
+            font-weight: 400;
+            text-align: center;
+            font-size: 48px;
+            line-height: 58px;
+            width: 1099px;
+            height: 90px;
+            left: 176px;
+            top: 64px;
+        }
+
+        .hr3 {
+            position: absolute;
+            width: 294px;
+            height: 0px;
+            left: 575px;
+            top: 176px;
+            border: 1px solid rgba(8, 92, 232, 0.85);
+        }
+
+        .gt {
+            border: 1px solid red;
+            position: absolute;
+            height: 467px;
+            width: 1440px;
+            top: 176px;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 123px 34px 190px;
+        }
+
+        .globe {
+            border: 1px solid green;
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .he3 {
+            border: 1px solid green;
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .type1 {
+            border: 1px solid green;
+            grid-column: 1/2;
+            grid-row: 3/4;
+        }
+
+        .operator {
+            border: 1px solid green;
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .he4 {
+            border: 1px solid green;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .type2 {
+            border: 1px solid green;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+
+        .loader {
+            border: 1px solid green;
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .he5 {
+            border: 1px solid green;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .type3 {
+            border: 1px solid green;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+
+        .lamp {
+            border: 1px solid green;
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        .he6 {
+            border: 1px solid green;
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+
+        .type4 {
+            border: 1px solid green;
+            grid-column: 4/5;
+            grid-row: 3/4;
+        }
+
+        .but {
+            position: absolute;
+            width: 205px;
+            height: 74px;
+            left: 616px;
+            top: 643px;
+            background: #085CE8;
+            border-radius: 35px;
+            font-weight: 700;
+            color: #FFFFFF;
+            font-size: 30px;
+            line-height: 32px;
+            text-align: center;
+        }
+
         .locations {
             grid-area: locations;
         }
 
         .footer {
-            grid-area: footer;
+            position: absolute;
+            width: 1440px;
+            height: 240px;
+            top: 3667px;
+            background: rgba(79, 79, 79, 0.85);
         }
     </style>
 </head>
@@ -533,11 +660,28 @@
                 </div>
             </div>
         </div>
+
         <div class="contacts">
-            <div class="type1"></div>
-            <div class="type2"></div>
-            <div class="type3"></div>
-            <div class="type4"></div>
+            <div class="he2">Why Choose BigFamily Center?</div>
+            <hr class="hr3">
+            <div class="gt">
+                <img src="/BF/img/globe.svg" alt="" class="globe">
+                <p class="he3">More experience</p>
+                <div class="type1">Every year, more than a million people come to FigFamily Center for care. Our highly
+                    specialized experts are deeply experienced in treating rare and complex conditions.</div>
+                <img src="/BF/img/operator.svg" alt="" class="operator">
+                <p class="he4">The right answers</p>
+                <div class="type2">Getting effective treatment depends on identifying the right problem.</div>
+                <img src="/BF/img/loader.svg" alt="" class="loader">
+                <p class="he5">Seamless care</p>
+                <div class="type3">AtBigFamily Center, every aspect of your care is coordinated and teams of experts
+                    work together to provide exactly the care you need. </div>
+                <img src="/BF/img/lamp.svg" alt="" class="lamp">
+                <p class="he6">Unparalleled expertise</p>
+                <div class="type4">BigFamily Center experts are some of the best in the world. In the U.S. News & World
+                    Report rankings of top hospitals.</div>
+            </div>
+            <input type="button" value="Learn more" class="but">
         </div>
         <div class="locations">
             <div class="ari"></div>
