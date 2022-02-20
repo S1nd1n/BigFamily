@@ -212,7 +212,7 @@
             line-height: 57.6px;
         }
 
-        hr {
+        .hr1 {
             position: absolute;
             width: 294px;
             height: 5px;
@@ -322,12 +322,107 @@
             text-align: center;
         }
 
-        .slider {
-            grid-area: slider;
+        .cards {
+            position: absolute;
+            top: 1486px;
+            width: 1440px;
+            height: 645px;
+            display: grid;
+            grid-template-columns: 386px 386px 386px;
+            grid-template-rows: 271px 271px;
+            justify-content: center;
+            align-content: center;
+            grid-column-gap: 69px;
+            background: rgba(181, 200, 232, 0.35);
+        }
+
+        .foto1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .history1 {
+            position: relative;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background: #FFF;
+        }
+
+        .foto2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .history2 {
+            position: relative;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            background: #FFF;
+        }
+
+        .foto3 {
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .history3 {
+            position: relative;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            background: #FFF;
+        }
+
+        .hr2 {
+            position: absolute;
+            width: 328px;
+            height: 0px;
+            top: 209px;
+            left: 28px;
+            border: 1px solid rgba(181, 200, 232, 0.5);
+        }
+
+        .link {
+            position: absolute;
+            left: 136px;
+            top: 223px;
+            width: 114px;
+            height: 31px;
+            color: rgba(0, 39, 97, 1);
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 48px;
+        }
+
+        .he1 {
+            position: absolute;
+            width: 356px;
+            height: 148px;
+            left: 15px;
+            top: 26px;
+            text-align: center;
+            line-height: 22px;
+            color: #000;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .bold {
+            font-weight: 700;
+            font-size: 24px;
         }
 
         .contacts {
             grid-area: contacts;
+        }
+
+        .foto {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .block2 {
+            grid-column: 1/2;
+            grid-row: 2/3;
         }
 
         .locations {
@@ -371,7 +466,7 @@
         </div>
         <div class="h1">We`ll surround your kids with love & care!
         </div>
-        <hr>
+        <hr class="hr1">
         <div class="articles">
             <div class="as">About success</div>
             <div class="as_txt">It's no stretch to say that a person has a serious advantage in life if he/she comes
@@ -398,10 +493,45 @@
             </ul>
             <input type="button" class="ft_but" value="See more topics">
         </div>
-        <div class="slider">
-            <div class="history1"></div>
-            <div class="history2"></div>
-            <div class="history3"></div>
+        <div class="cards">
+            <img src="/BF/img/image 4.svg" alt="" class="foto1">
+            <div class="history1">
+                <div class="block2">
+                    <div class="about">
+                        <p class="he1"><span class="bold">The power of sisters</span><br><br>
+                            At our Family Center, we have the honor of serving sisters who regularly need to get
+                            assistance on support and care of their siblings and families.</p>
+                    </div>
+                    <hr class="hr2">
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+            <img src="/BF/img/image 4 (1).svg" alt="" class="foto2">
+            <div class="history2">
+                <div class="block2">
+                    <div class="about">
+                        <p class="he1"><span class="bold">A story of 6 years</span><br><br>
+                            Please read below a story told by our clients not so long ago. 6 years ago they came to our
+                            center as the first-time parents. Now they have two kids and are expecting the third child.
+                        </p>
+                    </div>
+                    <hr class="hr2">
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
+            <img src="/BF/img/image 4 (2).svg" alt="" class="foto3">
+            <div class="history3">
+                <div class="block2">
+                    <div class="about">
+                        <p class="he1"><span class="bold">Growing bicultural kids</span><br><br>
+                            This is a rather difficult topic to consider. In order to investigate it deeper and more
+                            profoundly, we have interviewed the real specialists on this topic. Here is what they’ve
+                            shared with us.</p>
+                    </div>
+                    <hr class="hr2">
+                    <a href="#" class="link">Learn more</a>
+                </div>
+            </div>
         </div>
         <div class="contacts">
             <div class="type1"></div>
